@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: '<url_here>',
+        target: 'https://ideal-fortnight-96gv4ggqjqr2gj-8080.app.github.dev/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

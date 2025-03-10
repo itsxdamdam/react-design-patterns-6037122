@@ -1,6 +1,10 @@
+import { CurrentUserInfo } from "./CurrentUserInfo"
+
 function App() {
   return (
-    <h1>Your code goes here</h1>
+    <CurrentUserInfo>
+      <UserInfo></UserInfo>
+    </CurrentUserInfo>
   )
 }
 
