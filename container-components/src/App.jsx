@@ -1,10 +1,11 @@
-import { CurrentUserInfo } from "./CurrentUserInfo"
+import { CurrentUserLoader } from "./CurrentUserLoader"
+import { UserInfo } from "./UserInfo"
 
 function App() {
   return (
-    <CurrentUserInfo>
-      <UserInfo></UserInfo>
-    </CurrentUserInfo>
+    <CurrentUserLoader>
+      <UserInfo />
+    </CurrentUserLoader>
   )
 }
 
