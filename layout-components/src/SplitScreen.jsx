@@ -5,17 +5,18 @@ const Container = styled.div`
 `
 
 const Pane = styled.div`
-  flex: 1;
+  flex: ${props => props.weight};
 `
 
-export const SplitScreen = ({ left: Left, right: Right }) => {
+export const SplitScreen = ({ leftWeight = 1, rightWeight = 1, children }) => {
+  const [left, right] = children
   return (
     <Container>
-      <Pane>
-        <Left />
+      <Pane weight={leftWeight}>
+        {left}
       </Pane>
-      <Pane>
-        <Right />
+      <Pane weight={rightWeight}>
+        {right}
       </Pane>
     </Container>
   );
