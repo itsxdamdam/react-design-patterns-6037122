@@ -1,14 +1,20 @@
+import { useState } from 'react';
 import { ControlledForm } from "./ControlledForm"
+import { ControlledModal } from "./ControlledModal"
 import { UncontrolledForm } from "./UncontrolledForm"
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <>
-      <UncontrolledForm />
-      <ControlledForm
-        initialName="Shaun"
-        initialAge={123}
-        initialHairColor="Brown" />
+      <ControlledModal shouldShow={showModal} onRequestClose={() => {}}>
+        <ControlledForm
+          initialName="Shaun"
+          initialAge={123}
+          initialHairColor="Brown" />
+      </ControlledModal>
+      <button onClick={() => setShowModal(true)}>Open Modal</button>
     </>
   )
 }
