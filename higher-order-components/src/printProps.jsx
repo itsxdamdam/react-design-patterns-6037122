@@ -1,7 +1,5 @@
-export const printProps = Component => {
-  return (props) => {
-    console.log(props);
+export const printProps = Component => props => {
+  console.log(props);
 
-    return <Component {...props} />
-  }
+  return <Component {...props} />
 }
