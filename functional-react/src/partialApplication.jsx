@@ -8,16 +8,11 @@ export const Button = ({ size, color, text, ...props }) => {
 	);
 }
 
-function getPropertyWithDefault(key, defaultValue, obj) {
-  if (key in obj) {
-    return obj[key];
+export const partiallyApply = (Component, partialProps) => {
+  return props => {
+    return <Component {...partialProps} {...props} />
   }
-
-  return defaultValue;
 }
 
-function getName(obj) {
-  return getPropertyWithDefault('firstName', 'N/A', obj);
-}
-
-getName({ name: 'Shaun' })
+export const DangerButton = partiallyApply(Button, { size: 'large', color: 'red' });
+export const SuccessButton = partiallyApply(Button, { color: 'green', text: 'Success!!!!' })
