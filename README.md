@@ -3,6 +3,10 @@ This is the repository for the LinkedIn Learning course `React: Design Patterns`
 
 ![course-name-alt-text][lil-thumbnail-url] 
 
+## Course Description
+
+Explore recognized React design patterns to elevate your development for cleaner, more scalable code. In this course, Shaun Wassell—a lifelong programmer and full-stack development instructor—shows you how. Learn about layout components to organize on-screen content effectively. Discover container components that allow shared functionality and streamlined communication among React components. Get insights into the benefits of controlled components in state management. Find out how you can use higher order components to add functionality without altering existing code. Dive into functional programming concepts and how they can be applied in React. Plus, solidify your learning with practical examples. By the end of this course, you will have the essential tools to create React applications efficiently and effectively.
+
 _See the readme file in the main branch for updated instructions and information._
 ## Instructions
 This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
@@ -22,15 +26,20 @@ To resolve this issue:
     Add changes to git using this command: git add .
 	Commit changes using this command: git commit -m "some message"
 
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+ ### Instructor
+
+Shaun Wassell
+
+Senior Software Engineer, Educator at CBT Nuggets
+
+                            
+
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/shaun-wassell?u=104).
+
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQG0eDHsyOSqTA/learning-public-crop_675_1200/B4EZVdqqdwHUAY-/0/1741033220778?e=2147483647&v=beta&t=FxUDo6FA8W8CiFROwqfZKL_mzQhYx9loYLfjN-LNjgA
+[lil-course-url]: https://www.linkedin.com/learning/react-design-patterns-25656257
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQFmEpyeITn2sw/learning-public-crop_675_1200/B4EZYhY_bWHMAY-/0/1744316922353?e=2147483647&v=beta&t=-kh4q7GB31b55Zo41BXdC7tUV6-NwX7MQk7iwuFKr1Q
 
