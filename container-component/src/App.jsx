@@ -22,10 +22,7 @@ const getTestData = () => {
 function App() {
   return (
     <>
-      <DataLoader
-        getDataFn={getTestData}
-        resourceName="user"
-      >
+      <DataLoader getDataFn={getTestData} resourceName="user">
         <UserInfo />
       </DataLoader>
 
