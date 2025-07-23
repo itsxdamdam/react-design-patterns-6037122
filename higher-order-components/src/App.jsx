@@ -1,14 +1,11 @@
 import { printProps } from "./printProps";
 import { UserInfo } from "./UserInfo";
+import { withUser } from "./withUser";
 
-const UserInfoWrapper = printProps(UserInfo);
+const UserInfoWrapper = withUser(UserInfo, "234");
 
 function App() {
-  return (
-    <UserInfoWrapper
-      user={{ name: "Saw", age: 44, hairColor: "indigo", hobbies: [] }}
-    />
-  );
+  return <UserInfoWrapper />;
 }
 
 export default App;
