@@ -1,7 +1,9 @@
+import { useResource } from "./useResource";
 import { useUser } from "./useUser";
 
 export const UserInfo = ({ userId }) => {
-  const { isLoading, user } = useUser(userId);
+  // const { isLoading, user } = useUser(userId);
+  const { isLoading, data: user} = useResource("/users/" + userId, {})
 
   if (isLoading) {
     return <p>Loadinf...</p>;
