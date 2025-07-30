@@ -4,7 +4,7 @@ export const Card = ({ children }) => {
   return <div style={{ border: "3px solid black" }}>{children}</div>;
 };
 
-export const CardHeader = ({ title }) => {
+export const CardHeader = ({ children }) => {
   return <div style={{ fontSize: "20px", fontWeight: "bold" }}>{children}</div>;
 };
 
